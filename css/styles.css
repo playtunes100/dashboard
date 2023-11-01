@@ -1,4 +1,6 @@
-
+* {
+    border: 1px solid red;
+}
 body {
     margin: 0;
     display: grid;
@@ -55,6 +57,7 @@ body {
     grid-template-areas: 
     'search profile'
     'greeting buttons';
+    box-shadow: inset 0px -1px 5px  #615b5b;
 }
 
 .search-container {
@@ -93,6 +96,13 @@ body {
 
 #profile-pic {
     height: 2rem;
+    border-radius: 50%;
+}
+
+#profile-pic:hover {
+    height: 2rem;
+    box-shadow: 0px 0px 2px 2px red;
+    cursor: pointer;
 }
 
 .greeting-container {
@@ -128,4 +138,61 @@ body {
     font-size: small;
     font-weight: bold;
     background-color: #1992d4;
+}
+.main-content {
+    grid-area: content;
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    grid-template-rows: min-content 1fr;
+    grid-template-areas:
+        'projects announcements'
+        'projects trending';
+    background-color: #e2e8f0;
+}
+
+.projects {
+    grid-area: projects;
+    padding: 1rem;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.card {
+    padding: 10px;
+    box-shadow:  1px 1px 4px #535455;
+    border-radius: 10px;
+    background-color: white;
+    
+}
+.card p {
+    display: -webkit-box; 
+            -webkit-box-orient: vertical; 
+            -webkit-line-clamp: 5; 
+            overflow: hidden; 
+            text-overflow: ellipsis; 
+}
+
+.actions {
+    display: flex;
+    justify-content:right;
+    gap: 2rem;
+    padding-right: 1rem;
+}
+
+.actions img {
+    height: 1rem;
+}
+
+.announcements {
+    grid-area: announcements;
+    padding: 1rem;
+}
+
+.trending {
+    grid-area: trending;
+    padding: 1rem;
 }
