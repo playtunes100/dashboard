@@ -7,9 +7,8 @@ body {
     grid-template-areas:
     'nav header'
     'nav content';
+    font-family: Roboto, sans-serif;
 }
-    
-
 
 .nav{
     grid-area: nav;
@@ -47,7 +46,6 @@ body {
 }
 
 .header {
-    
     grid-area: header;
     display: grid;
     grid-template-columns: 3fr 2fr;
@@ -146,6 +144,10 @@ body {
         'projects announcements'
         'projects trending';
     background-color: #e2e8f0;
+}
+
+.main-content p {
+    color: #6f6f6f;
 }
 
 .projects {
