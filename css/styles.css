@@ -10,6 +10,7 @@ body {
     font-family: Roboto, sans-serif;
 }
 
+
 .nav{
     grid-area: nav;
     background-color: #1992d4;
@@ -29,6 +30,8 @@ body {
     color: white;
     text-decoration: none;
 }
+
+
 
 .nav-list-item img {
     height: 1rem;
@@ -83,11 +86,14 @@ body {
     align-items:center;
 }
 
-.profile-container span {
+.profile-container span a {
     font-weight: bold;
+    text-decoration: none;
+    color: #0b0b0b;
 }
 #notification {
     height: 1rem;
+    
 }
 
 #profile-pic {
@@ -116,6 +122,11 @@ body {
 
 .greeting-container span {
     font-size:xx-small;
+}
+
+.greeting-container a {
+    text-decoration: none;
+    color: #0b0b0b;
 }
 
 .buttons-container {
@@ -250,3 +261,8 @@ body {
 .trending-user p {
     margin: 0;
 }
+
+a:hover {
+    text-decoration: underline 2px #a39ebe;
+}
+
